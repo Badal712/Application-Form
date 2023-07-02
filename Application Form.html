@@ -1,0 +1,192 @@
+<html>
+	<head>
+		<title>Application Form</title>
+			<link rel="stylesheet" href="application.css">
+		<datalist id="dlCity">
+			<option value="Anugul">Anugul</option>
+			<option value="Balangir">Balangir</option>
+			<option value="Baleshwar">Baleshwar</option>
+			<option value="Bargarh">Bargarh</option>
+			<option value="Baudh">Baudh</option>
+			<option value="Bhadrak">Bhadrak</option>
+			<option value="Cuttack">Cuttack</option>
+			<option value="Debagarh">Debagarh</option>
+			<option value="Dhenkanal">Dhenkanal</option>
+			<option value="Gajapati">Gajapati</option>
+			<option value="Ganjam">Ganjam</option>
+			<option value="Jagatsinghapur">Jagatsinghapur</option>
+			<option value="Jajapur">Jajapur</option>
+			<option value="Jharsuguda">Jharsuguda</option>
+			<option value="Kalahandi">Kalahandi</option>
+			<option value="Kandhamal">Kandhamal</option>
+			<option value="Kendrapara">Kendrapara</option>
+			<option value="Khordha">Khordha</option>
+			<option value="Koraput">Koraput</option>
+			<option value="Malkangiri">Malkangiri</option>
+			<option value="Mayurbhanj">Mayurbhanj</option>
+			<option value="Nabarangapur">Nabarangapur</option>
+			<option value="Nayagarh">Nayagarh</option>
+			<option value="Nuapada">Nuapada</option>
+			<option value="Puri">Puri</option>
+			<option value="Rayagada">Rayagada</option>
+			<option value="Sambalpur">Sambalpur</option>
+			<option value="Subarnapur">Subarnapur</option>
+			<option value="Sundargarh">Sundargarh </option>
+		</datalist>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Ysabeau+SC:wght@600&display=swap" rel="stylesheet">
+	</head>
+
+	<body onload="showDate()">
+		<div class="container">
+			<form name="f1" id="register">
+				<div class="form1" id="heading">
+					Application Form
+				</div>
+				<table border="0">
+					<tr>
+						<td>Application No</td>
+						<td>:</td>
+						<td><input class="name" type="text" name="txtRegdNo" size="34" placeholder="Enter your Application Number"></td>
+						<td>Date</td>
+						<td>:</td>
+						<td><input class="name" type="text" name="txtDate"></td>
+					</tr>
+					<tr>
+						<td>Name of Applicant</td>
+						<td>:</td>
+						<td colspan="4"><input class="name" type="text" name="txtName" size="34" placeholder="Enter your Name"></td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td>:</td>
+						<td colspan="4"><input class="rbname" type="radio" name="rbGen"> Male</td>
+					</tr>
+					<tr>
+						<td colspan="2"></td>
+						<td colspan="4"><input class="rbname" type="radio" name="rbGen"> Female</td>
+					</tr>
+					<tr>
+						<td>Date of Birth</td>
+						<td>:</td>
+						<td><input class="name" type="date" name="dtDOB" onchange="showAge()"></td>
+						<td>Age</td>
+						<td>:</td>
+						<td><input class="name" type="text" name="txtAge"></td>
+					</tr>
+					<tr>
+						<td>Father's Name</td>
+						<td>:</td>
+						<td><input class="name" type="text" name="txtFName" size="34"></td>
+						<td>Phone Number</td>
+						<td>:</td>
+						<td><input class="name" type="tel" name="Fphone" placeholder="xxxxxxxxxx" required></td>
+					</tr>
+					<tr>
+						<td>Mother's Name</td>
+						<td>:</td>
+						<td><input class="name" type="text" name="txtMName" size="34"></td>
+						<td>Phone Number</td>
+						<td>:</td>
+						<td><input class="name" type="tel" name="Mphone" placeholder="xxxxxxxxxx" required></td>
+					</tr>
+					<tr>
+						<td>Locality</td>
+						<td>:</td>
+						<td><input class="name" type="text" name="txtloc" size="34"></td>
+						<td>City</td>
+						<td>:</td>
+						<td><input class="name" type="text" name="txtCity" required list="dlCity"></td>
+					</tr>
+					<tr>
+						<td>State</td>
+						<td>:</td>
+						<td><select class="name" name = "cmbState">
+										<option value = "">--Select--</option>
+										<option value = "Andhra Pradesh">Andhra Pradesh</option>
+										<option value = "Arunachal Pradesh">Arunachal Pradesh</option>
+										<option value = "Assam">Assam</option>
+										<option value = "Bihar">Bihar</option>
+										<option value = "Chhattisgarh">Chhattisgarh</option>
+										<option value = "Goa">Goa</option>
+										<option value = "Gujarat">Gujarat</option>
+										<option value = "Haryana">Haryana</option>
+										<option value = "Himachal Pradesh">Himachal Pradesh</option>
+										<option value = "Jharkhand">Jharkhand</option>
+										<option value = "Karnataka">Karnataka</option>
+										<option value = "Kerala">Kerala</option>
+										<option value = "Madhya Pradesh">Madhya Pradesh</option>
+										<option value = "Maharashtra">Maharashtra</option>
+										<option value = "Manipur">Manipur</option>
+										<option value = "Meghalaya">Meghalaya</option>
+										<option value = "Mizoram">Mizoram</option>
+										<option value = "Nagaland">Nagaland</option>
+										<option value = "Odisha">Odisha</option>
+										<option value = "Punjab">Punjab</option>
+										<option value = "Rajasthan">Rajasthan</option>
+										<option value = "Sikkim">Sikkim</option>
+										<option value = "Tamil Nadu">Tamil Nadu</option>
+										<option value = "Telangana">Telangana</option>
+										<option value = "Tripura">Tripura</option>
+										<option value = "Uttarakhand">Uttarakhand</option>
+										<option value = "Uttar Pradesh">Uttar Pradesh</option>
+										<option value = "West Bengal">West Bengal</option>
+										<option value = "Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+										<option value = "Chandigarh">Chandigarh</option>
+										<option value = "Dadra and Nagar Haveli and Daman & Diu">Dadra and Nagar Haveli and Daman & Diu</option>
+										<option value = "Delhi">Delhi</option>
+										<option value = "Jammu & Kashmir">Jammu & Kashmir</option>
+										<option value = "Ladakh">Ladakh</option>
+										<option value = "Lakshadweep">ULakshadweep</option>
+										<option value = "Puducherry">Puducherry</option>
+									</select>
+						<td>Pincode</td>
+						<td>:</td>
+						<td><input class="name" type="text" name="txtPin" required></td>
+					</tr>
+					<tr>
+						<td>Courses Applied</td>
+						<td>:</td>
+						<td colspan="4">
+							<select class="name" name = "cmbCourses">
+								<option value="">--Select--</option>
+								<option value="Civil Engineering">Civil Engineering</option>
+								<option value="Software Engineering">Software Engineering</option>
+								<option value="Data Engineering">Data Engineering</option>
+								<option value="Sound Engineering">Sound Engineering</option>
+								<option value="Computer Science Engineering">Computer Science Engineering</option>
+								<option value="Marine Engineering">CMarine Engineering</option>
+								<option value="Biomedical Engineering">Biomedical Engineering</option>
+								<option value="Electrical Engineering">Electrical Engineering</option>
+								<option value="Mechanical Engineering">Mechanical Engineering</option>
+								<option value="Aerospace Engineering">Aerospace Engineering</option>
+								<option value="Aeronautical Engineering">Aeronautical Engineering</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="6"><h3>Document :</h3></td>
+					</tr>
+					<tr>
+						<td>Photo</td>
+						<td>:</td>
+						<td><input class="name1" type="file" name="filePhoto" onchange="showPhoto()"></td>
+						<td>Certificate</td>
+						<td>:</td>
+						<td><input class="name1" type="file" name="fileCert" onchange="showCert()"></td>
+					</tr>
+					<tr align="center">
+						<td colspan="3"><img src="" name="imgPhoto" width="80" height="110"</td>
+						<td colspan="3"><img src="" name="imgCert" width="80" height="110"</td>
+					</tr>
+					<tr align="center">
+						<td colspan="3"><input class="btn" type="Submit" name="btnSubmit" value="Submit"></td>
+						<td colspan="3"><input class="btn" type="Reset" name="btnReset" value="Reset"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<script src="Application Form.js"></script>
+	</body>
+</html>
